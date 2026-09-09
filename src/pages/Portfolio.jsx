@@ -14,9 +14,6 @@ import s1 from "../components/assets/s1.PNG"
 import s2 from "../components/assets/s2.PNG"
 import s3 from "../components/assets/s3.PNG"
 //degine graphique
-import mtn from "../components/assets/ps/fliyersMtn.png"
-import logo from "../components/assets/ps/FINAL.png"
-import cc from "../components/assets/ps/coursLangueFront.png"
 import { FaArrowCircleRight } from 'react-icons/fa';
 
 function Portfolio() {  
@@ -44,30 +41,6 @@ function Portfolio() {
       category: 'Web Design',
       description: 'Design premium pour restaurant étoilé',
       image: d3,
-      link: 'https://www.figma.com/design/AVcB6Ixgpe21uEKrzvFj9F/Sans-titre?node-id=0-1&p=f&t=fRJzjvY8inII57ll-0',
-      tags: ['Restaurant', 'Luxe', 'Booking']
-    }
-  ];
-  const graphicDesignProjects = [
-    {
-      title: 'affiche',
-      category: 'graphic design',
-      description: 'Interface de visualisation de données',
-      image: mtn,
-      tags: ['creation de logo ','identiter visuelle', '...']
-    },
-    {
-      title: 'logo',
-      category: 'graphic design',
-      description: 'Interface de visualisation de données',
-      image: logo,
-      tags: ['creation de logo ','identiter visuelle', '...']
-    },
-    {
-      title: 'affiche',
-      category: 'graphic design',
-      description: 'Interface de visualisation de données',
-      image: cc,
       link: 'https://www.figma.com/design/AVcB6Ixgpe21uEKrzvFj9F/Sans-titre?node-id=0-1&p=f&t=fRJzjvY8inII57ll-0',
       tags: ['Restaurant', 'Luxe', 'Booking']
     }
@@ -104,7 +77,6 @@ function Portfolio() {
   const getFilteredProjects = () => {
     if (activeTab === 'all') return allProjects;
     if (activeTab === 'design') return webDesignProjects;
-    if (activeTab === 'graphic') return graphicDesignProjects;
     if (activeTab === 'dev') return webDevProjects;
     return allProjects;
   };
@@ -136,12 +108,6 @@ function Portfolio() {
               onClick={() => setActiveTab('design')}
             >
               Web Design
-            </button>
-            <button 
-              className={`filter-btn ${activeTab === 'graphic' ? 'active' : ''}`}
-              onClick={() => setActiveTab('graphic')}
-            >
-              graphicDesign
             </button>
             <button 
               className={`filter-btn ${activeTab === 'dev' ? 'active' : ''}`}
