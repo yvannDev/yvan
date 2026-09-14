@@ -1,20 +1,15 @@
-*{
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
-}
-
 .footer {
-  background: linear-gradient(180deg, #0a0a0f 0%, #050508 100%);
-  color: rgba(255, 255, 255, 0.8);
-  padding: 4rem 0 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--ink);
+  color: rgba(255, 253, 248, 0.75);
+  padding: 4.5rem 0 2rem;
+  border-top: 4px solid var(--coral);
   margin-top: auto;
 }
 
 .footer-container { 
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 .footer-content {
@@ -27,17 +22,14 @@
 .footer-section h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--white);
 }
 
 .footer-section h4 {
   
   font-size: 1.1rem;
   font-weight: 600;
-  color: #d4af37;
+  color: var(--mint);
   margin-bottom: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -47,7 +39,7 @@
 .footer-section p {
   
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 253, 248, 0.56);
 }
 
 .footer-section ul {
@@ -62,14 +54,14 @@
 
 .footer-section ul li a {
   
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 253, 248, 0.56);
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-block;
 }
 
 .footer-section ul li a:hover {
-  color: #d4af37;
+  color: var(--coral);
   transform: translateX(5px);
 }
 
@@ -80,27 +72,27 @@
 }
 
 .social-links a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 253, 248, 0.56);
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-block;
 }
 
 .social-links a:hover {
-  color: #d4af37;
+  color: var(--coral);
   transform: translateX(5px);
 }
 
 .footer-bottom {
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 253, 248, 0.14);
   text-align: center;
 }
 
 .footer-bottom p {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 253, 248, 0.4);
   margin: 0;
 }
 
@@ -113,7 +105,7 @@
 
 @media (max-width: 768px) {
   .footer-container {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
   }
 
   .footer-content {
