@@ -10,8 +10,8 @@ import d3 from "../components/assets/d3.png"
 
 // importation de  quelques projet web
 
-import s1 from "../components/assets/s1.PNG"
-import s2 from "../components/assets/s2.PNG"
+import s1 from "../components/assets/s1.png"
+import s2 from "../components/assets/s2.png"
 import s3 from "../components/assets/s3.PNG"
 //degine graphique
 import { FaArrowCircleRight } from 'react-icons/fa';
