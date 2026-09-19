@@ -12,7 +12,7 @@ import d3 from "../components/assets/d3.png"
 
 import s1 from "../components/assets/s1.png"
 import s2 from "../components/assets/s2.png"
-import s3 from "../components/assets/s3.PNG"
+import s3 from "../components/assets/s3.png"
 //degine graphique
 import { FaArrowCircleRight } from 'react-icons/fa';
 
@@ -53,15 +53,15 @@ function Portfolio() {
       description: 'Application de viste medicale avec ordonance imprimable apres une consultation par nos meilleure medecins',
       image: s1,
       link: 'https://clackdoctor.netlify.app',
-      tags: ['React', 'Node.js','Express.js','postgreSQL']
+      tags: ['react/jascript', 'css', 'nodejs/express']
     },
     {
-      title: 'site vitrine ',
+      title: 'app web ',
       category: 'Web Development',
-      description: 'application vitrine   pour presenter les differentes activiter d\'un college ',
+      description: 'application web pour devis btp ',
       image: s2,
-      link: 'https://github.com/yvannDev/freeCode/tree/IAES',
-      tags: ['html', 'css', 'javascript']
+      link: 'https://github.com/yvannDev/oro_btp/',
+      tags: ['react/typescript', 'tailwindcss', 'nodejs/express']
     },
     {
       title: 'reservation d\'hotel en ligne avec systeme de paiement',
