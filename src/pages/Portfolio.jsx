@@ -49,18 +49,18 @@ function Portfolio() {
   const webDevProjects = [
     {
       title: 'Application de viste medicale',
-      category: 'Web Development',
+      category: 'developpement web',
       description: 'Application de viste medicale avec ordonance imprimable apres une consultation par nos meilleure medecins',
       image: s1,
       link: 'https://clackdoctor.netlify.app',
       tags: ['react/jascript', 'css', 'nodejs/express']
     },
     {
-      title: 'app web ',
-      category: 'Web Development',
+      title: 'application de devis btp',
+      category: 'developpement web',
       description: 'application web pour devis btp ',
       image: s2,
-      link: 'https://github.com/yvannDev/oro_btp/',
+      link: 'https://oro-frontend.onrender.com',
       tags: ['react/typescript', 'tailwindcss', 'nodejs/express']
     },
     {
