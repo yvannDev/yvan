@@ -1,6 +1,6 @@
 .portfolio-page { min-height: 100vh; }
 .portfolio-content { padding: 4rem 2rem 6rem; }
-.portfolio-container { max-width: 1180px; margin: auto; }
+.portfolio-container { max-width: 1180px; margin: auto; } 
 .portfolio-filters { display: flex; gap: .6rem; margin-bottom: 3rem; flex-wrap: wrap; }
 .filter-btn { padding: .7rem 1rem; background: transparent; border: 1px solid var(--line); color: var(--muted); font: 500 .78rem 'DM Mono',monospace; cursor: pointer; transition: .2s; }
 .filter-btn:hover, .filter-btn.active { background: var(--ink); color: var(--white); border-color: var(--ink); }

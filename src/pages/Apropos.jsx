@@ -6,7 +6,7 @@ import l1 from "../components/assets/logo.png"
  const Apropos=()=>{
   const skills = [  
     { name: 'React.js', level: 60 },
-    { name: 'React-native/pwa', level: 35 },
+    { name: 'React-native', level: 35 },
     { name: 'JavaScript/typescript', level: 60 },
     { name: 'html/css', level: 85 },
     { name: 'Node.js', level: 55 },

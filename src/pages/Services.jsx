@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Services.css';
-import { FaArrowCircleLeft, FaArrowCircleRight, FaLaptop, FaMobileAlt, FaSearch, FaTools } from 'react-icons/fa';
+import {  FaArrowCircleRight, FaLaptop, FaMobileAlt, FaSearch, FaTools } from 'react-icons/fa';
 import { FaPenClip, FaServer } from 'react-icons/fa6';
   
 function Services() {
@@ -187,14 +187,13 @@ function Services() {
             <div className="tech-category">
               <h3>Outils</h3>
               <div className="tech-tags">
-                <span className="tech-tag">Figma/photoshop</span>
                 <span className="tech-tag">Docker</span>
                 <span className="tech-tag">Git</span>
                 <span className="tech-tag">AWS S3</span>
+                <span className="tech-tag">minio</span>
                 <span className="tech-tag">IA(LLM)</span>
-                <span className="tech-tag">Vercel</span>
-                <span className="tech-tag">linux</span>
                 <span className="tech-tag">render</span>
+                <span className="tech-tag">linux</span>
                 <span className="tech-tag">VS Code</span>
               </div>
             </div>
