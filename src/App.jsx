@@ -7,11 +7,14 @@ import Apropos from './pages/Apropos';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import { LanguageProvider } from './context/LanguageContext';
+
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <LanguageProvider>
+      <Router>
       <div className="App">
         <Header />
         <main className="main-content">
@@ -25,7 +28,8 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
+    </Router> 
+    </LanguageProvider>
   );
 }
 
