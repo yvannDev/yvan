@@ -10,9 +10,16 @@ import {
 import type { ComponentType, ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import { FadeIn } from "@/components/ui/motion-primitives";
+// import img projects from "@/public/images/projects";
+import d1 from "@/public/d1.png"
+import d2 from "@/public/d2.png"
+import d3 from "@/public/d3.png"
 
+// web site: https://www.joelcalifa.com/projects
+import s1 from "@/public/s1.png"
+import s2 from "@/public/s2.png"
+import s3 from "@/public/s3.png"
 /**
  * Project imagery below is mockup-only. All visuals are sourced from
  * Dribbble and credit belongs to the original creators on dribbble.com.
@@ -43,7 +50,7 @@ const PROJECTS: Project[] = [
     meta: "Design Engineer, 2024",
     imageRatio: 752 / 497,
     image:
-      "https://cdn.dribbble.com/userupload/46128964/file/b92b9d268dd928642ca94bd49e32923a.jpg?resize=752x497&vertical=center",
+      d1.src,
     imageAlt: "Loom AI writing companion mockup",
   },
   {
@@ -56,7 +63,7 @@ const PROJECTS: Project[] = [
     meta: "Product & Brand Designer, 2025",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/24599416/file/original-1ae5075dcd129aebb16bdbca24b41ac7.png?resize=1024x768&vertical=center",
+        d2.src,
     imageAlt: "Atlas Studio brand and product sprint mockup",
   },
   {
@@ -69,7 +76,7 @@ const PROJECTS: Project[] = [
     meta: "Founder & Designer, 2024",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/47357856/file/75841fa59f32f05ca6c5ddf02d08dfe6.png?resize=1024x768&vertical=center",
+      d3.src,
     imageAlt: "Rhythm calm analytics mockup",
   },
   {
@@ -83,7 +90,7 @@ const PROJECTS: Project[] = [
     meta: "Lead Designer, 2023",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/43955214/file/original-d4cde1de803e84b97d8892e3444c04b0.png?resize=1024x768&vertical=center",
+      s1.src,
     imageAlt: "Groove music school booking flow mockup",
   },
   {
@@ -97,7 +104,7 @@ const PROJECTS: Project[] = [
     meta: "Design Engineer, 2024",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/30310902/file/original-621e7fe47be9d11ee14544456c693bec.png?resize=1024x768&vertical=center",
+      s2.src,
     imageAlt: "Fieldnote pocket sized research tool mockup",
   },
   {
@@ -110,7 +117,7 @@ const PROJECTS: Project[] = [
     meta: "Independent Project, 2025",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/16560717/file/original-c6f745d50302d66609bfe080f99f5396.png?resize=1024x768&vertical=center",
+      s3.src,
     imageAlt: "Talkback friendlier AI chat interface mockup",
   },
 ];
