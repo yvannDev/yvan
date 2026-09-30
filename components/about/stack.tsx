@@ -15,28 +15,27 @@ const CHIPS: Chip[] = [
   {
     label: "Figma",
     slug: "figma",
-    bg: "#1f1f1f",
+    bg: "#F24E1E",
     fg: "#ffffff",
     iconUrl: "https://svgl.app/library/figma.svg",
   },
-    { label: "html5", slug: "html5", bg: "#1FB6CB", fg: "#ffffff" },
-  { label: "css", slug: "css", bg: "#1FB6CB", fg: "#ffffff" },
-  { label: "express", slug: "express", bg: "#1FB6CB", fg: "#ffffff" },
-  { label: "React", slug: "react", bg: "#1FB6CB", fg: "#ffffff" },
-  { label: "Next.js", slug: "nextdotjs", bg: "#1f1f1f", fg: "#ffffff" },
-  { label: "TypeScript", slug: "typescript", bg: "#2F74C0", fg: "#ffffff" },
-  { label: "javascript", slug: "javascript", bg: "#5b54ff", fg: "#ffffff" },
-  { label: "node.js", slug: "node.js", bg: "#111111", fg: "#ffffff" },
-  { label: "git", slug: "git", bg: "#0AE448", fg: "#0a0a0a" },
+  { label: "html5", slug: "html5", bg: "#E34F26", fg: "#ffffff" },
+  { label: "css", slug: "css", bg: "#1572B6", fg: "#ffffff" },
+  { label: "express", slug: "express", bg: "#000000", fg: "#ffffff" },
+  { label: "React", slug: "react", bg: "#61DAFB", fg: "#0a0a0a" },
+  { label: "Next.js", slug: "nextdotjs", bg: "#000000", fg: "#ffffff" },
+  { label: "TypeScript", slug: "typescript", bg: "#3178C6", fg: "#ffffff" },
+  { label: "javascript", slug: "javascript", bg: "#F7DF1E", fg: "#0a0a0a" },
+  { label: "node.js", slug: "nodedotjs", bg: "#5FA04E", fg: "#ffffff" },
+  { label: "git", slug: "git", bg: "#F05032", fg: "#ffffff" },
   { label: "GitHub", slug: "github", bg: "#181717", fg: "#ffffff" },
-  { label: "render", slug: "render", bg: "#0a0a0a", fg: "#ffffff" },
-  { label: "Tailwind CSS", slug: "tailwindcss", bg: "#2BBCF5", fg: "#ffffff" },
-    { label: "docker", slug: "docker", bg: "#2BBCF5", fg: "#ffffff" },
-     { label: "kubernetes", slug: "kubernetes", bg: "#2BBCF5", fg: "#ffffff" },
-       { label: "linux", slug: "linux", bg: "#2BBCF5", fg: "#ffffff" },
-
-
-];
+  { label: "render", slug: "render", bg: "#46E3B7", fg: "#0a0a0a" },
+  { label: "Tailwind CSS", slug: "tailwindcss", bg: "#06B6D4", fg: "#ffffff" },
+    { label: "GitHub Actions", slug: "githubactions", bg: "#2088FF", fg: "#ffffff" },
+  { label: "docker", slug: "docker", bg: "#2496ED", fg: "#ffffff" },
+  { label: "kubernetes", slug: "kubernetes", bg: "#326CE5", fg: "#ffffff" },
+  { label: "linux", slug: "linux", bg: "#FCC624", fg: "#0a0a0a" },
+];  
 
 const CHIP_RADIUS = 14;
 const ICON_RADIUS = 10;

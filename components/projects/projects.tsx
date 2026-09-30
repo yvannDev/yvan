@@ -36,89 +36,96 @@ type Project = {
   imageRatio: number;
   image: string;
   imageAlt: string;
+  href: string;
 };
 
 const PROJECTS: Project[] = [
   {
-    id: "loom",
+    id: "restaurant-app",
     icon: Sparkles,
-    iconLabel: "LOOM",
+    iconLabel: "restaurant app",
     title:
-      "An AI writing companion that thinks alongside you, allowing you to capture ideas, edits, and drafts in one focused space.",
+      "A restaurant website that makes browsing the menu and ordering feel effortless.",
     description:
-      "I designed Loom, a focused writing surface where ideas, edits, and drafts coexist without the chat clutter.",
-    meta: "Design Engineer, 2024",
+      "I designed a clean, appetizing interface where guests can explore dishes, discover the menu, and place an order in just a few taps.",
+    meta: "UI/UX Designer, 2026",
     imageRatio: 752 / 497,
     image:
       d1.src,
-    imageAlt: "Loom AI writing companion mockup",
+    imageAlt: "Restaurant app interface mockup",
+    href: "#",
   },
   {
-    id: "atlas",
+    id: "restaurant-mobile-app",
     icon: Compass,
-    iconLabel: "Atlas Studio",
-    title: "A two week brand and product sprint for a creative studio.",
+    iconLabel: "restaurant mobile app",
+    title: "A mobile-first experience for ordering and booking a table.",
     description:
-      "End to end identity, marketing site, and a small product surface designed to feel quietly confident across every touchpoint.",
-    meta: "Product & Brand Designer, 2025",
+      "A thumb-friendly mobile app designed for hungry users on the go, with quick navigation, clear dish cards, and a simple checkout flow.",
+    meta: "UI/UX Designer, 2026",
     imageRatio: 1024 / 768,
     image:
         d2.src,
-    imageAlt: "Atlas Studio brand and product sprint mockup",
+    imageAlt: "Restaurant mobile app screens mockup",
+    href: "#",
   },
   {
-    id: "rhythm",
+    id: "bank-online",
     icon: LineChart,
-    iconLabel: "Rhythm",
-    title: "Calm analytics for indie founders.",
+    iconLabel: "bank online",
+    title: "Online banking that feels clear, calm, and trustworthy.",
     description:
-      "A weekly digest that turns raw product data into a simple narrative. Built so you can read it on a Sunday with coffee.",
-    meta: "Founder & Designer, 2024",
+      "A dashboard concept that turns accounts, transfers, and transactions into a simple, readable experience without the usual financial clutter.",
+    meta: "UI/UX Designer, 2026",
     imageRatio: 1024 / 768,
     image:
       d3.src,
-    imageAlt: "Rhythm calm analytics mockup",
+    imageAlt: "Online banking dashboard mockup",
+    href: "#",
   },
   {
-    id: "groove",
+    id: "healthcare-app",
     icon: Wand2,
-    iconLabel: "Groove",
+    iconLabel: "healthcare app",
     title:
-      "Reimagining the booking flow for a music school, asisting thousands of students in finding the right lessons.",
+      "A multi-role platform for booking medical appointments in a few clicks.",
     description:
-      "I led a redesign of the lesson booking experience, cutting drop off in half and making the schedule feel like a calendar people actually want to open.",
-    meta: "Lead Designer, 2023",
+      "I built a full-stack booking platform where patients, doctors, and admins each get their own tailored experience, from scheduling to managing appointments.",
+    meta: "Full-Stack Developer & Designer, 2026",
     imageRatio: 1024 / 768,
     image:
       s1.src,
-    imageAlt: "Groove music school booking flow mockup",
+    imageAlt: "Healthcare appointment booking platform mockup",
+    href: "https://clack-ynsn.onrender.com/",
   },
   {
-    id: "fieldnote",
+    id: "btp-app",
     icon: Layers,
-    iconLabel: "Fieldnote",
+    iconLabel: "btp app",
     title:
-      "A pocket sized research tool for design teams that want to get out of their docs and into the world.",
+      "A web app that helps construction professionals create and manage quotes.",
     description:
-      "Capture quotes, tag patterns, and synthesize themes in one place. The interface stays out of the way so the thinking can happen.",
-    meta: "Design Engineer, 2024",
+      "Built for the construction sector, it simplifies quote creation and follow-up so professionals spend less time on paperwork and more time on site.",
+    meta: "Full-Stack Developer, 2026",
     imageRatio: 1024 / 768,
     image:
       s2.src,
-    imageAlt: "Fieldnote pocket sized research tool mockup",
+    imageAlt: "Construction quote management app mockup",
+    href: "https://oro-frontend.onrender.com/",
   },
   {
-    id: "talkback",
+    id: "hotel-online",
     icon: Bot,
-    iconLabel: "Talkback",
-    title: "A friendlier interface for talking to language models.",
+    iconLabel: "hotel online",
+    title: "An online hotel experience, from browsing rooms to booking a stay.",
     description:
-      "An exploration of how AI chat could feel less like a terminal and more like a conversation with a curious friend.",
-    meta: "Independent Project, 2025",
+      "A responsive hotel website that lets guests explore rooms, check availability, and reserve their stay through a smooth, simple flow.",
+    meta: "Front-End Developer, 2026",
     imageRatio: 1024 / 768,
     image:
       s3.src,
-    imageAlt: "Talkback friendlier AI chat interface mockup",
+    imageAlt: "Online hotel booking website mockup",
+    href: "https://github.com/yvannDev/online_hotel_front.git",
   },
 ];
 
@@ -181,50 +188,61 @@ function ProjectCard({
   index: number;
 }): ReactNode {
   const Icon = project.icon;
+  const isExternal = project.href.startsWith("http");
+  const linkProps = isExternal
+    ? { target: "_blank", rel: "noopener noreferrer" }
+    : {};
   return (
     <FadeIn
       delay={Math.min(index * 0.06, 0.3)}
       className="mb-6 break-inside-avoid md:mb-7"
     >
-      <article className="project-card flex cursor-pointer flex-col gap-4 rounded-3xl border border-foreground/8 bg-background p-3 sm:p-3.5">
-        <header className="flex items-center gap-2.5 px-1 pt-2">
-          <span className="border-foreground/10 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border bg-background">
-            <Icon className="h-3.5 w-3.5 text-foreground" aria-hidden="true" />
-          </span>
-          <span className="text-sm font-medium tracking-tight text-foreground">
-            {project.iconLabel}
-          </span>
-        </header>
+      <Link
+        href={project.href}
+        aria-label={project.iconLabel}
+        className="focus-ring block rounded-3xl"
+        {...linkProps}
+      >
+        <article className="project-card flex cursor-pointer flex-col gap-4 rounded-3xl border border-foreground/8 bg-background p-3 sm:p-3.5">
+          <header className="flex items-center gap-2.5 px-1 pt-2">
+            <span className="border-foreground/10 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border bg-background">
+              <Icon className="h-3.5 w-3.5 text-foreground" aria-hidden="true" />
+            </span>
+            <span className="text-sm font-medium tracking-tight text-foreground">
+              {project.iconLabel}
+            </span>
+          </header>
 
-        <div
-          className="project-card__image ring-foreground/5 relative w-full overflow-hidden rounded-2xl bg-foreground/5 ring-1"
-          style={{ aspectRatio: project.imageRatio }}
-        >
-          <div className="project-card__image-inner">
-            <Image
-              src={project.image}
-              alt={project.imageAlt}
-              fill
-              sizes="(min-width: 1024px) 540px, (min-width: 768px) 45vw, 100vw"
-              className="object-cover"
-              priority={index < 2}
-            />
+          <div
+            className="project-card__image ring-foreground/5 relative w-full overflow-hidden rounded-2xl bg-foreground/5 ring-1"
+            style={{ aspectRatio: project.imageRatio }}
+          >
+            <div className="project-card__image-inner">
+              <Image
+                src={project.image}
+                alt={project.imageAlt}
+                fill
+                sizes="(min-width: 1024px) 540px, (min-width: 768px) 45vw, 100vw"
+                className="object-cover"
+                priority={index < 2}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="flex flex-col gap-2.5 px-1 pb-1">
-          <h3 className="text-[20px] font-medium leading-[1.2] tracking-tight text-foreground sm:text-[22px]">
-            {project.title}
-          </h3>
-          <p className="text-[14px] leading-normal tracking-tight text-foreground/65 sm:text-[15px]">
-            {project.description}
+          <div className="flex flex-col gap-2.5 px-1 pb-1">
+            <h3 className="text-[20px] font-medium leading-[1.2] tracking-tight text-foreground sm:text-[22px]">
+              {project.title}
+            </h3>
+            <p className="text-[14px] leading-normal tracking-tight text-foreground/65 sm:text-[15px]">
+              {project.description}
+            </p>
+          </div>
+
+          <p className="px-1 pb-2 text-[12px] tracking-tight text-foreground/50">
+            {project.meta}
           </p>
-        </div>
-
-        <p className="px-1 pb-2 text-[12px] tracking-tight text-foreground/50">
-          {project.meta}
-        </p>
-      </article>
+        </article>
+      </Link>
     </FadeIn>
   );
 }

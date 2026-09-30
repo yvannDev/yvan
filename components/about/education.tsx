@@ -7,21 +7,16 @@ type Entry = {
   slug?: string;
 };
 
-const ENTRIES: Entry[] = [
+const ENTRIES: Entry[] = [   
   {
-    school: "Rhode Island School of Design",
-    degree: "BFA, Graphic Design",
-    period: "2013 – 2017",
+    school: "joos",
+    degree: "bachelor's degree, web development",
+    period: "2025-2026",
   },
   {
-    school: "Stanford University",
-    degree: "HCI Certificate, d.school",
-    period: "2018",
-  },
-  {
-    school: "Bruno Simon's Three.js Journey",
-    degree: "WebGL & Shaders",
-    period: "2022",
+    school: "saint joseph secondary school",
+    degree: "High School Diploma",
+    period: "2023 – 2024",  
   },
 ];
 

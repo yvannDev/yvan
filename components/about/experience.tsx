@@ -8,57 +8,36 @@ type Entry = {
   company: string;
   role: string;
   period: string;
-  slug?: string;
+  logo?: string;
   brand?: string;
 };
 
 const ENTRIES: Entry[] = [
   {
-    company: "Linear",
-    role: "Senior Design Engineer",
-    period: "Mar 2024 – Present",
-    slug: "linear",
+    company: "tameri.tech",
+    role: "web developer",
+    period: "january 2026 – Present",
+    logo: "/tameri.jpg",
     brand: "#5E6AD2",
   },
   {
-    company: "Vercel",
-    role: "Product Designer",
-    period: "Aug 2022 – Feb 2024",
-    slug: "vercel",
-    brand: "#0a0a0a",
-  },
-  {
-    company: "Stripe",
-    role: "Design Engineer",
-    period: "Jun 2021 – Jul 2022",
-    slug: "stripe",
-    brand: "#635BFF",
-  },
-  {
-    company: "Figma",
-    role: "UI Engineer",
-    period: "Sep 2019 – May 2021",
-    slug: "figma",
-    brand: "#A259FF",
-  },
-  {
-    company: "Notion",
-    role: "Product Designer",
-    period: "Jan 2018 – Aug 2019",
-    slug: "notion",
-    brand: "#111111",
-  },
-  {
-    company: "Airbnb",
+    company: "dasgroup",
     role: "Design Intern",
-    period: "May 2017 – Dec 2017",
-    slug: "airbnb",
+    period: "june 2026 – september 2026",
+    logo: "/dasgroup.webp",
     brand: "#FF5A5F",
   },
   {
+    company: "bproo dev",
+    role: "web developer",
+    period: "january 2024 – april 2025",
+    logo: "/bproo.png",
+    brand: "#A259FF",
+  },
+  {
     company: "Freelance",
-    role: "Designer & Developer",
-    period: "2015 – 2017",
+    role: "Designer",
+    period: "2022 – 2023",
     brand: "#0AE448",
   },
 ];
@@ -170,20 +149,20 @@ function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
   const initials = entry.company.charAt(0);
   return (
     <span
-      className="ring-foreground/8 inline-flex h-12 w-12 shrink-0 items-center justify-center bg-white ring-1 dark:ring-white/10"
+      className="ring-foreground/8 inline-flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden bg-white ring-1 dark:ring-white/10"
       aria-hidden="true"
       style={{
         borderRadius: 14,
-        ...(entry.slug ? {} : { backgroundColor: entry.brand }),
+        ...(entry.logo ? {} : { backgroundColor: entry.brand }),
       }}
     >
-      {entry.slug ? (
+      {entry.logo ? (
         <img
-          src={`https://cdn.simpleicons.org/${entry.slug}`}
+          src={entry.logo}
           alt=""
-          width={24}
-          height={24}
-          className="h-6 w-6"
+          width={48}
+          height={48}
+          className="h-full w-full object-cover"
           draggable={false}
         />
       ) : (

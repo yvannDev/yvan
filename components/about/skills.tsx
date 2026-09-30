@@ -29,7 +29,7 @@ export function Skills(): ReactNode {
               {skill}
             </span>
           ))}
-        </div>
+        </div>   
       </div>
     </div>
   );

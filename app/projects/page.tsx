@@ -3,7 +3,7 @@ import { Projects } from "@/components/projects/projects";
 import { FadeIn } from "@/components/ui/motion-primitives";
 import { createMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import type { ReactNode } from "react"; 
 
 export const metadata: Metadata = createMetadata({
   title: "Projects",
