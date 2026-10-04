@@ -35,6 +35,9 @@ const CHIPS: Chip[] = [
   { label: "docker", slug: "docker", bg: "#2496ED", fg: "#ffffff" },
   { label: "kubernetes", slug: "kubernetes", bg: "#326CE5", fg: "#ffffff" },
   { label: "linux", slug: "linux", bg: "#FCC624", fg: "#0a0a0a" },
+    { label: "postgresql", slug: "postgresql", bg: "#0F2D3D", fg: "#0a0a0a" },
+    
+
 ];  
 
 const CHIP_RADIUS = 14;
