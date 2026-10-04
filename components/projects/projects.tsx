@@ -53,7 +53,7 @@ const PROJECTS: Project[] = [
     image:
       d1.src,
     imageAlt: "Restaurant app interface mockup",
-    href: "#",
+    href: "https://www.figma.com/design/Nk0rPa1lPjiCOCldpQt0eU/Sans-titre?t=fRJzjvY8inII57ll-0",
   },
   {
     id: "restaurant-mobile-app",
@@ -67,7 +67,7 @@ const PROJECTS: Project[] = [
     image:
         d2.src,
     imageAlt: "Restaurant mobile app screens mockup",
-    href: "#",
+    href: "https://www.figma.com/design/Nk0rPa1lPjiCOCldpQt0eU/Sans-titre?t=fRJzjvY8inII57ll-0",
   },
   {
     id: "bank-online",
@@ -81,7 +81,7 @@ const PROJECTS: Project[] = [
     image:
       d3.src,
     imageAlt: "Online banking dashboard mockup",
-    href: "#",
+    href: "https://www.figma.com/design/vbMPTnKLRTL0oHglzrS29w/Sans-titre?t=fRJzjvY8inII57ll-0",
   },
   {
     id: "healthcare-app",
